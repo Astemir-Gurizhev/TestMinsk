@@ -185,7 +185,6 @@ body {
   text-align: center;
 }
 
-
 .second__post-img {
   margin-bottom: 20px;
 }
@@ -214,11 +213,17 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
+.form__top-select {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
 .form__top-area {
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.85);
-  padding: 12px 36px 12px 10px;
+  padding: 12px 10px 12px 10px;
   max-width: 370px;
   width: 100%;
   border: 1px solid rgb(255, 255, 255);
@@ -239,7 +244,57 @@ body {
   letter-spacing: 0%;
   text-align: left;
 }
+.second__form-bottom {
+}
+.form__bottom-files {
+  position: relative;
+}
+.form__bottom-file {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  
 
+  max-width: 370px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  border: 2px solid rgb(62, 156, 220);
+  border-radius: 3px;
+  background: rgb(255, 255, 255);
+}
+.form__bottom-inputFile {
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+  max-width: 370px;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  border: 2px solid rgb(62, 156, 220);
+  border-radius: 3px;
+  background: rgb(255, 255, 255);
+}
+.bottom__file-img {
+}
+.bottom__file-text {
+  color: rgb(39, 39, 51);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.form__top-area {
+}
 /* ----------------------------------------------------------- */
 .footer {
   padding: 30px 0;
