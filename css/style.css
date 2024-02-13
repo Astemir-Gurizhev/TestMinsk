@@ -17,6 +17,9 @@ body {
 /* ------------------------------------------------------------------ */
 
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   padding-top: 33.5px;
   padding-bottom: 31.5px;
   background: rgba(16, 16, 29, 0.9);
@@ -59,6 +62,7 @@ body {
   padding-bottom: 202px;
 }
 .first__title {
+  padding-top: 100px;
   margin-bottom: 80px;
   max-width: 780px;
   width: 100%;
@@ -135,6 +139,108 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+
+/* ------------------------------------------------------------------- */
+
+.second {
+  padding-top: 126px;
+  padding-bottom: 150px;
+  background: url("../images/main/second/secondBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.second__title {
+  margin-bottom: 30px;
+  color: white;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 43px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.second__title span {
+  color: rgb(62, 156, 220);
+}
+.second__subtitle {
+  margin-bottom: 80px;
+  text-align: center;
+  color: rgb(187, 187, 187);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.second__posts {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.second__post {
+  max-width: 209px;
+  width: 100%;
+  padding: 0 10.5px;
+  text-align: center;
+}
+
+
+.second__post-img {
+  margin-bottom: 20px;
+}
+.second__post-text {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+}
+.second__post-points {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 829px;
+  width: 100%;
+}
+/*-------------------------------------------------------------*/
+.second__form {
+  padding-top: 80px;
+  padding-bottom: 150px;
+}
+.second__form-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form__top-area {
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 12px 36px 12px 10px;
+  max-width: 370px;
+  width: 100%;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 3px;
+
+  color: rgb(39, 39, 51);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.form__top-area::placeholder {
+  color: rgb(39, 39, 51);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* ----------------------------------------------------------- */
 .footer {
   padding: 30px 0;
   background: rgb(61, 64, 80);

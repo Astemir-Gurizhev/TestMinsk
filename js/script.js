@@ -1,0 +1,1 @@
+document.querySelectorAll('.dropdown').forEach(function(dropDownWrapper) {
