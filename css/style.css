@@ -370,9 +370,27 @@ body {
 
   display: none;
 }
+.top__select-list::-webkit-scrollbar {
+  width: 7px;
+  height: 0;
+}
+.top__select-list::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background: rgb(61, 64, 80);
+  margin-top: 3.36px;
+  margin-bottom: 3.36px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset; /* тень внутри скроллбара */
+}
+.top__select-list::-webkit-scrollbar-thumb {
+  background: rgb(62, 156, 220);
+}
+.top__select-list::-webkit-scrollbar-thumb:hover {
+  background: rgb(71, 140, 186);
+}
+
 .top__select-list.active {
   display: block;
-  background: white;
+  background: rgba(255, 255, 255, 1);
 }
 .select__list-item {
   cursor: pointer;
