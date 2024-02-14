@@ -322,12 +322,72 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.top__select-wrapper {
+  position: relative;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.85);
+  max-width: 370px;
+  width: 100%;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 3px;
+}
+.top__select-wrapper.active {
+  border: none;
+  border-radius: 0;
+  border-radius: 3px 3px 0px 0px;
+  color: black;
+  background: #3d4050;
+}
 .form__top-select {
+  padding: 12px 10px 12px 10px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 5px;
+  color: rgb(39, 39, 51);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.form__top-select.active {
+  color: white;
+}
+.top__select-list {
+  max-height: 199px;
+  overflow: scroll;
+  position: absolute;
+  top: 46px;
+  left: 0;
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.85);
+
+  width: 100%;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+
+  display: none;
+}
+.top__select-list.active {
+  display: block;
+  background: white;
+}
+.select__list-item {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding: 5px 10px;
+}
+.select__list-item:hover {
+  color: rgb(66, 169, 237);
+}
+.top__select-img.active {
+  transform: rotate(180deg);
 }
 .form__top-area {
   box-sizing: border-box;
