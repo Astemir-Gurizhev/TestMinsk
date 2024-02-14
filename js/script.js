@@ -25,10 +25,10 @@ selectListItem.forEach(item => {
     })
 })
 
-// const formBtn = document.querySelector('.second__form-btn')
-// formBtn.addEventListener('click', e => {
-//     e.preventDefault()
-// })
+const formBtn = document.querySelector('.second__form-btn')
+formBtn.addEventListener('click', e => {
+    e.preventDefault()
+})
 
 const inputFile = document.querySelector('.form__bottom-inputFile')
 const fileText = document.querySelector('.bottom__file-text')

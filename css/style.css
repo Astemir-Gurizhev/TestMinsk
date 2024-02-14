@@ -3,7 +3,20 @@
 body {
   font-family: Lato;
 }
-
+::-webkit-scrollbar {
+  width: 7px;
+  height: 0;
+}
+::-webkit-scrollbar-track {
+  background: rgb(61, 64, 80);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset; /* тень внутри скроллбара */
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(62, 156, 220);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(71, 140, 186);
+}
 .wrapper {
   display: flex;
   flex-direction: column;
