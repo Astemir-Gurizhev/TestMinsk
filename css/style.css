@@ -45,6 +45,8 @@ body {
   align-items: center;
 }
 .header__logo {
+  width: 247px;
+  height: 35px;
 }
 .header__menu {
   display: flex;
@@ -312,6 +314,8 @@ body {
   background: rgb(255, 255, 255);
 }
 .bottom__file-img {
+  height: 20px;
+  width: 17.14px;
 }
 .bottom__file-text {
   color: rgb(39, 39, 51);
@@ -321,8 +325,6 @@ body {
   letter-spacing: 0%;
   text-align: left;
   text-transform: uppercase;
-}
-.form__top-area {
 }
 
 /* --------------------------------------------------------------- */
