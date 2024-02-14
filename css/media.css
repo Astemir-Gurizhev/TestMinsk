@@ -1,0 +1,92 @@
+@media (max-width: 1190px) {
+  .footer__row {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .footer__lic {
+    text-align: center;
+  }
+  .container {
+    margin: 0 20px;
+  }
+
+  .header__row {
+    gap: 20px;
+  }
+  .header__menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .second {
+    padding: 60px 0;
+  }
+  .first {
+    padding-bottom: 60px;
+    background: url("../images/main/first/backFirst.png") 50%;
+  }
+  .first__title {
+    padding-top: 30px;
+    font-size: 26px;
+    margin-bottom: 20px;
+    line-height: 40px;
+  }
+  .first__subtitle {
+    font-size: 16px;
+  }
+  .first__menu {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .first__menu-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .first__buttons-left {
+    padding: 10px 0;
+  }
+  .first__buttons-right {
+    padding: 10px 0;
+  }
+  .first__title {
+    font-size: 23px;
+    line-height: 35px;
+  }
+  .first__buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (max-width: 380px) {
+  .footer__cash {
+    flex-direction: column;
+  }
+  .footer__cash::before {
+    background: none;
+  }
+  .footer__cash::after {
+    background: none;
+  }
+  .header__logo {
+    width: 200px;
+  }
+  .bur {
+    width: 30px;
+  }
+  .bur::after {
+    top: 6px;
+    width: 30px;
+  }
+  .bur::before {
+    top: -6px;
+    width: 30px;
+  }
+  .header__row {
+    gap: 10px;
+  }
+}

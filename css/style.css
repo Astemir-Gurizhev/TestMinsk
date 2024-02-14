@@ -62,14 +62,41 @@ body {
 .header__menu-link.active {
   color: rgb(67, 171, 240);
 }
-
+.burger {
+  cursor: pointer;
+  padding: 10px;
+  display: none;
+}
+.bur {
+  position: relative;
+  background: white;
+  width: 40px;
+  height: 2px;
+  cursor: pointer;
+}
+.bur::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  background: white;
+  width: 40px;
+  height: 2px;
+}
+.bur::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  background: white;
+  width: 40px;
+  height: 2px;
+}
 /* ---------------------------------------------------------------- */
 
 .main {
   flex-grow: 1;
 }
 .first {
-  background: url("../images/main/first/backFirst.png");
+  background: url("../images/main/first/backFirst.png") center;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 103px;
@@ -102,6 +129,7 @@ body {
 .first__menu {
   margin-bottom: 80px;
   margin-left: 10px;
+
 }
 .first__menu-text {
   color: rgb(0, 0, 0);
@@ -189,10 +217,12 @@ body {
 .second__posts {
   position: relative;
   display: flex;
-  align-items: center;
+  
   justify-content: space-between;
 }
 .second__post {
+  display: flex;
+  flex-direction: column;
   max-width: 209px;
   width: 100%;
   padding: 0 10.5px;
@@ -202,9 +232,11 @@ body {
 .second__post-img {
   max-width: 100px;
   margin-bottom: 20px;
-  flex-grow: 1;
+  margin: 0 auto 20px;
+  
 }
 .second__post-text {
+  flex-grow: 1;
   color: rgb(255, 255, 255);
   font-size: 16px;
   font-weight: 400;
