@@ -3,6 +3,9 @@
 body {
   font-family: Lato;
 }
+body.active {
+  overflow: hidden;
+}
 ::-webkit-scrollbar {
   width: 7px;
   height: 0;
@@ -50,6 +53,21 @@ body {
   display: flex;
   gap: 60px;
 }
+.header__menu.active {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  padding-top: 150px;
+  background: rgba(16, 16, 29, 1);
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.header__menu-link__active {
+  font-size: 20px;
+}
 .header__menu-link {
   color: rgb(255, 255, 255);
   font-size: 13px;
@@ -68,6 +86,8 @@ body {
   display: none;
 }
 .bur {
+  transition: all 0.6s ease 0s;
+
   position: relative;
   background: white;
   width: 40px;
@@ -75,6 +95,7 @@ body {
   cursor: pointer;
 }
 .bur::after {
+  transition: all 0.6s ease 0s;
   content: "";
   position: absolute;
   top: 8px;
@@ -83,12 +104,23 @@ body {
   height: 2px;
 }
 .bur::before {
+  transition: all 0.6s ease 0s;
   content: "";
   position: absolute;
   top: -8px;
   background: white;
   width: 40px;
   height: 2px;
+}
+.bur.active {
+  background: none;
+}
+.bur.active::before {
+  transform: rotate(45deg);
+  top: 8px;
+}
+.bur.active::after {
+  transform: rotate(-45deg);
 }
 /* ---------------------------------------------------------------- */
 
@@ -129,7 +161,6 @@ body {
 .first__menu {
   margin-bottom: 80px;
   margin-left: 10px;
-
 }
 .first__menu-text {
   color: rgb(0, 0, 0);
@@ -217,7 +248,7 @@ body {
 .second__posts {
   position: relative;
   display: flex;
-  
+
   justify-content: space-between;
 }
 .second__post {
@@ -233,7 +264,6 @@ body {
   max-width: 100px;
   margin-bottom: 20px;
   margin: 0 auto 20px;
-  
 }
 .second__post-text {
   flex-grow: 1;
@@ -245,7 +275,7 @@ body {
 }
 .second__post-points {
   position: absolute;
-  top: 40%;
+  top: 33%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 829px;
@@ -480,7 +510,9 @@ body {
 /* -------------------------------------------------------------- */
 
 .second__form-btn {
-  padding: 17.5px 140px;
+  max-width: 370px;
+  width: 100%;
+  padding: 15px 0;
   text-align: center;
 
   display: block;

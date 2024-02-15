@@ -1,4 +1,35 @@
 @media (max-width: 1190px) {
+  .footer {
+    padding-bottom: 40px;
+  }
+  .second__form {
+    padding-top: 40px;
+  }
+  .second__form-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .second__form-bottom {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .second__posts {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .second__subtitle {
+    margin-bottom: 40px;
+  }
+  .second__post-points {
+    display: none;
+  }
+  .second__title {
+    padding-top: 30px;
+    font-size: 26px;
+    margin-bottom: 20px;
+    line-height: 40px;
+  }
   .footer__row {
     flex-direction: column;
     gap: 50px;
@@ -45,7 +76,11 @@
     font-size: 16px;
   }
 }
-
+@media (max-width: 540px) {
+  .second__post-img {
+    width: 40%;
+  }
+}
 @media (max-width: 420px) {
   .first__buttons-left {
     padding: 10px 0;
@@ -60,6 +95,10 @@
   .first__buttons {
     flex-direction: column;
     gap: 10px;
+  }
+  .second__title {
+    font-size: 23px;
+    line-height: 35px;
   }
 }
 @media (max-width: 380px) {

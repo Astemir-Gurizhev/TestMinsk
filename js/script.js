@@ -38,3 +38,14 @@ inputFile.addEventListener('input', () => {
 })
 
 
+const burger = document.querySelector('.burger')
+const headerMenu = document.querySelector('.header__menu')
+const headerMenuLink = document.querySelector('.header__menu-link')
+const body = document.querySelector('body')
+const bur = document.querySelector('.bur')
+burger.addEventListener('click', () => {
+    headerMenu.classList.toggle('active')
+    headerMenuLink.classList.toggle('header__menu-link__active')
+    body.classList.toggle('active')
+    bur.classList.toggle('active')
+})
